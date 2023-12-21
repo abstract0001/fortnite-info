@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Карты
+{% endblock %}
+
+{% block body%}
+<div class="container d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">Карта первой главы</h2>
+            <p class="lead">Нажмите чтобы посмотреть на весь экран <br> ↓ </p>
+        </div>
+        <img onclick="openFullscreen(this)" src="https://photobooth.cdn.sports.ru/preset/news/7/63/9b0aab39545f6b1a132a8854c707d.webp" alt="карта" class="bd-placeholder-img card-img-top" width="100%" height="225">
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">Карта второй главы</h2>
+            <p class="lead">Нажмите чтобы посмотреть на весь экран <br> ↓ </p>
+        </div>
+        <img onclick="openFullscreen(this)" src="https://fortnitefun.ru/wp-content/uploads/2018/10/map-season-2-glava-3.jpg" alt="карта" class="bd-placeholder-img card-img-top" width="100%" height="225">
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">Карта третьей главы</h2>
+            <p class="lead">Нажмите чтобы посмотреть на весь экран <br> ↓ </p>
+        </div>
+        <img onclick="openFullscreen(this)" src="https://fortnitefun.ru/wp-content/uploads/2022/06/karta-3-sezona-4-glavy.jpeg" alt="карта" class="bd-placeholder-img card-img-top" width="100%" height="225">
+    </div>
+</div>
+
+<script>
+function openFullscreen(img) {
+    if (img.requestFullscreen) {
+        img.requestFullscreen();
+    } else if (img.msRequestFullscreen) {
+        img.msRequestFullscreen();
+    } else if (img.mozRequestFullScreen) {
+        img.mozRequestFullScreen();
+    } else if (img.webkitRequestFullscreen) {
+        img.webkitRequestFullscreen();
+    }
+}
+</script>
+
+
+{% endblock %}

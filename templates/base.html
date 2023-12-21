@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<header class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Fortnite info</span>
+      </a>
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/">На главную</a>
+    </nav>
+    </header>
+{% block body %}{% endblock %}
+<p>ㅤ</p>
+<p>ㅤ</p>
+<p>ㅤ</p>
+<p>ㅤ</p>
+<p>ㅤ</p>
+
+
+
+<footer class="container pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <small class="d-block mb-3 text-body-secondary">©2023</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>DISCORD</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://discord.gg/yTx4AQFa95">Дискорд сервер</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>VK</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://vk.com/abstract77">Коколев Артём</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://vk.com/inango9">Поплаухин Иван</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://vk.com/s5weop">Носова Виктория</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>TELEGRAM</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://t.me/AbsTrakt2">Я в телеграм</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Главная страница
+{% endblock %}
+
+{% block body%}
+<style>
+    .custom-buttons {
+        margin-top: 150px;
+    }
+
+    .custom-buttons button {
+        font-size: 30px;
+        padding: 15px 100px;
+    }
+</style>
+
+<div class="d-grid gap-2 custom-buttons">
+    <button class="container btn btn-primary" type="button" onclick="redirectToAboutPage()">Обо мне</button>
+    <button class="container btn btn-primary" type="button" onclick="redirectToWeaponPage()">Оружие</button>
+    <button class="container btn btn-primary" type="button" onclick="redirectToHealingPage()">Лечение</button>
+    <button class="container btn btn-primary" type="button" onclick="redirectToMapPage()">Карты</button>
+</div>
+
+<script>
+     function redirectToAboutPage() {
+        window.location.href = '/about';
+    }
+    function redirectToWeaponPage() {
+        window.location.href = '/weapon';
+    }
+    function redirectToHealingPage() {
+        window.location.href = '/healing';
+    }
+    function redirectToMapPage() {
+        window.location.href = '/map';
+    }
+</script>
+{% endblock %}
